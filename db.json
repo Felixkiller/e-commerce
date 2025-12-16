@@ -1,0 +1,87 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "demo@user.com",
+      "password": "demo123",
+      "name": "John Doe",
+      "phone": "081234567890"
+    },
+    {
+      "id": "2134",
+      "name": "FelixCJ",
+      "email": "felixjuatsa@gmail.com",
+      "password": "demo123",
+      "phone": "083831010885"
+    }
+  ],
+  "packages": [
+    {
+      "id": "1",
+      "name": "Lite",
+      "data": "5GB",
+      "price": 25000,
+      "duration": "7 days",
+      "speed": "10 Mbps",
+      "features": [
+        "Unlimited Apps",
+        "24/7 Support",
+        "No Fair Usage Policy"
+      ],
+      "popular": false,
+      "color": "from-blue-400 to-blue-600"
+    },
+    {
+      "id": "2",
+      "name": "Power",
+      "data": "15GB",
+      "price": 55000,
+      "duration": "15 days",
+      "speed": "25 Mbps",
+      "features": [
+        "Unlimited Apps",
+        "24/7 Support",
+        "Priority Network",
+        "Free Streaming"
+      ],
+      "popular": true,
+      "color": "from-purple-400 to-purple-600"
+    },
+    {
+      "id": "3",
+      "name": "Ultra",
+      "price": 95000,
+      "duration": "30 days",
+      "speed": "50 Mbps",
+      "features": [
+        "Unlimited Apps",
+        "Premium Support",
+        "Priority Network",
+        "Free Streaming",
+        "5G Ready"
+      ],
+      "popular": false,
+      "color": "from-pink-400 to-pink-600"
+    },
+    {
+      "id": "4",
+      "name": "Unlimited",
+      "data": "Unlimited",
+      "price": 150000,
+      "duration": "30 days",
+      "speed": "100 Mbps",
+      "features": [
+        "Truly Unlimited",
+        "Premium Support",
+        "Priority Network",
+        "Free Streaming",
+        "5G Ready",
+        "Gaming Mode"
+      ],
+      "popular": false,
+      "color": "from-orange-400 to-orange-600"
+    }
+  ],
+  "transactions": [],
+  "cart": []
+}
