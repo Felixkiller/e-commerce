@@ -388,11 +388,12 @@ Remove `@tailwind` directives dan gunakan custom CSS
 
 ### Package Catalog
 ```
-┌──────────-┬──────────┬──────────┬──────────┐
-│   Lite    │  Power   │   Ultra  │ Unlimited│
-│   upto 10mbps    │ UPTO 25mbps   │   UPTO 50 MBPS   │ Upto 100mbps│
-│ Rp 25K       │ Rp 55K   │  Rp 95K  │  Rp 150K │
-└──────────_   ┴──────────┴──────────┴──────────┘
+┌─────────────┬─────────────┬─────────────┬─────────────┐
+│    Lite     │    Power    │    Ultra    │  Unlimited  │
+│  Up to 10   │  Up to 25   │  Up to 50   │  Up to 100  │
+│    Mbps     │    Mbps     │    Mbps     │    Mbps     │
+│  Rp 25,000  │  Rp 55,000  │  Rp 95,000  │  Rp 150,000 │
+└─────────────┴─────────────┴─────────────┴─────────────┘
 ```
 
 ---
@@ -468,7 +469,7 @@ Contributions are welcome! Ikuti langkah berikut:
 ## 👨‍💻 Author
 
 **Frontend Developer**
-- GitHub: [@yFelixkiller](https://github.com/yourusername)
+- GitHub: [@yFelixkiller](https://github.com/felixkiller)
 - Email: felixjuatsa@gmail.com.com
 - LinkedIn: [Felix](www.linkedin.com/in/felix-christian-juarsa-1527a4190)
 
@@ -492,7 +493,7 @@ Jika ada pertanyaan atau issues:
 
 1. Check [Issues](https://github.com/Felixkiller/datanet-ecommerce/issues) page
 2. Create new issue dengan detail lengkap
-3. Email: felixkuatsa@gmail.com
+3. Email: felixjuatsa@gmail.com
 
 ---
 
