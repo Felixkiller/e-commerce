@@ -1,0 +1,45 @@
+.ant-layout-header {
+  line-height: 64px;
+  height: 64px;
+}
+
+.ant-btn-primary {
+  background: linear-gradient(to right, #9333ea, #ec4899) !important;
+  border: none !important;
+}
+
+.ant-btn-primary:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(147, 51, 234, 0.3);
+}
+
+.ant-card {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.ant-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.from-blue-400 { --tw-gradient-from: #60a5fa; }
+.to-blue-600 { --tw-gradient-to: #2563eb; }
+.from-purple-400 { --tw-gradient-from: #c084fc; }
+.to-purple-600 { --tw-gradient-to: #9333ea; }
+.from-pink-400 { --tw-gradient-from: #f472b6; }
+.to-pink-600 { --tw-gradient-to: #db2777; }
+.from-orange-400 { --tw-gradient-from: #fb923c; }
+.to-orange-600 { --tw-gradient-to: #ea580c; }
+
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-from), var(--tw-gradient-to));
+}
