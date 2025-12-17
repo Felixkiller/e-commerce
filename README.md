@@ -9,7 +9,6 @@
 
 Sebuah aplikasi e-commerce modern untuk pembelian paket data internet dengan antarmuka yang menarik dan user experience yang optimal. Dibangun menggunakan React, Ant Design, dan JSON Server sebagai mock backend.
 
-![DataNet Preview](https://via.placeholder.com/800x400/9333ea/ffffff?text=DataNet+E-Commerce)
 
 ## ✨ Features
 
