@@ -597,38 +597,62 @@ const App = () => {
               </Card>
             ) : (
               <div className="space-y-6">
-                {cart.map((item) => (
-                  <Card key={item.id}>
-                                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between">
-                                    <div className="flex items-start sm:items-center space-x-4 w-full sm:w-auto">
-                                      <div className={`w-16 h-16 sm:w-16 sm:h-16 bg-gradient-to-br ${item.color} rounded-xl flex items-center justify-center text-white font-bold` }>
-                                        <div className="text-base sm:text-xl">Up to {formatSpeed(item.speed) || item.data}</div>
-                                      </div>
-                                      <div>
-                                        <h3 className="text-lg md:text-xl font-bold">{item.name} Package</h3>
-                                        <p className="text-sm md:text-base text-gray-600">
-                                          Up to {formatSpeed(item.speed) || item.data} • /month /bulan
-                                        </p>
-                                      </div>
-                                    </div>
-                                    <div className="flex items-center sm:space-x-4 flex-col sm:flex-row mt-3 sm:mt-0 w-full sm:w-auto">
-                                      <div className="text-right mr-0 sm:mr-4">
-                                        <p className="text-xl md:text-2xl font-bold text-emerald-700">
-                                          Rp {item.price.toLocaleString('id-ID')}
-                                        </p>
-                                      </div>
-                                      <Button
-                                        type="default"
-                                        danger
-                                        onClick={() => handleRemoveFromCart(item.id)}
-                                        className="w-full sm:w-auto"
-                                      >
-                                        Cancel Order
-                                      </Button>
-                                    </div>
-                                  </div>
-                  </Card>
-                ))}
+                {cart.map((item) => {
+  // Match colors to package IDs
+  const gradientMap = {
+    1: 'from-red-300 to-red-500',      // Lite = Red
+    2: 'from-emerald-300 to-emerald-500', // Power = Green
+    3: 'from-sky-300 to-sky-500',      // Ultra = Blue
+    4: 'from-yellow-300 to-yellow-500'  // Unlimited = Yellow
+  };
+  
+  const borderColorMap = {
+    1: '#ef4444',  // Red
+    2: '#10b981',  // Green
+    3: '#0ea5e9',  // Blue
+    4: '#eab308'   // Yellow
+  };
+
+  const cardGradient = gradientMap[item.id] || 'from-gray-300 to-gray-500';
+  const borderColor = borderColorMap[item.id] || '#9ca3af';
+
+  return (
+    <Card 
+      key={item.id}
+      className="border-l-4"
+      style={{ borderLeftColor: borderColor }}
+    >
+      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between">
+        <div className="flex items-start sm:items-center space-x-4 w-full sm:w-auto">
+          <div className={`w-16 h-16 sm:w-16 sm:h-16 bg-gradient-to-br ${cardGradient} rounded-xl flex items-center justify-center text-white font-bold shadow-lg`}>
+            <div className="text-base sm:text-xl">Up to {formatSpeed(item.speed) || item.data}</div>
+          </div>
+          <div>
+            <h3 className="text-lg md:text-xl font-bold">{item.name} Package</h3>
+            <p className="text-sm md:text-base text-gray-600">
+              Up to {formatSpeed(item.speed) || item.data} • /month /bulan
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center sm:space-x-4 flex-col sm:flex-row mt-3 sm:mt-0 w-full sm:w-auto">
+          <div className="text-right mr-0 sm:mr-4">
+            <p className="text-xl md:text-2xl font-bold text-emerald-700">
+              Rp {item.price.toLocaleString('id-ID')}
+            </p>
+          </div>
+          <Button
+            type="default"
+            danger
+            onClick={() => handleRemoveFromCart(item.id)}
+            className="w-full sm:w-auto"
+          >
+            Cancel Order
+          </Button>
+        </div>
+      </div>
+    </Card>
+  );
+})}
 
                 <Card>
                   <div className="flex items-center justify-between mb-6">
