@@ -428,21 +428,19 @@ Remove `@tailwind` directives dan gunakan custom CSS
 
 ## 📝 Development Timeline
 
-| Phase | Task | Duration |
-|-------|------|----------|
-| 1 | Project setup & configuration | 30 min |
-| 2 | Database design | 15 min |
-| 3 | API service implementation | 30 min |
-| 4 | Authentication flow | 20 min |
-| 5 | Package catalog UI | 40 min |
-| 6 | Cart functionality | 30 min |
-| 7 | Checkout & transactions | 25 min |
-| 8 | Styling & animations | 30 min |
-| 9 | Testing & debugging | 20 min |
-| **Total** | | **3h 30m** |
+|     Phase | Task                              | Duration                     |
+| --------: | --------------------------------- | ---------------------------- |
+|         1 | Project setup & configuration     | 30 min                       |
+|         2 | Database design (json-server)     | 15 min                       |
+|         3 | API service implementation        | 30 min                       |
+|         4 | Authentication flow (dummy login) | 20 min                       |
+|         5 | Package catalog UI                | 40 min                       |
+|         6 | Cart / purchase flow              | 30 min                       |
+|         7 | Checkout & transactions           | 25 min                       |
+|         8 | Styling & UI/UX enhancements      | 30 min                       |
+|         9 | Testing, debugging & refinement   | **1 day 20 min**             |
+| **Total** |                                   | **1 day 3 hours 30 minutes** |
 
-**Start Time:** December 15, 2025 - 14:30 WIB  
-**End Time:** December 16, 2025 - 18:00 WIB
 
 ---
 
